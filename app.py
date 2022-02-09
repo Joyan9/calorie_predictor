@@ -12,7 +12,8 @@ import streamlit as st
 model = pickle.load(open('model.pkl','rb'))
 
 def calorie_prediction(input_data):
-    input_data_array = np.asarray(input_data)
+    input_data_float = [float(i) for i in input_data]
+    input_data_array = np.asarray(input_data_float)
     input_data_reshaped = input_data_array.reshape(1,-1)
     prediction = model.predict(input_data_reshaped)
     return prediction[0]
