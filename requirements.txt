@@ -4,4 +4,4 @@ matplotlib>=1.4.3
 pandas>=0.19
 seaborn>= 0.10
 streamlit
-Cython>= 0.28.5
+py-xgboost>=1.2
