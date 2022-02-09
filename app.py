@@ -9,7 +9,7 @@ import numpy as np
 import pickle
 import streamlit as st
 
-model = pickle.load(open('C:/Users/joyan/OneDrive/Desktop/Machine learning course/Calorie prediction/model.pkl','rb'))
+model = pickle.load(open('model.pkl','rb'))
 
 def calorie_prediction(input_data):
     input_data_array = np.asarray(input_data)
